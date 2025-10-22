@@ -1,0 +1,51 @@
+/* ===== БАЗОВАЯ НОРМАЛИЗАЦИЯ ===== */
+
+/* Применяем ко всем элементам на странице */
+* {
+  margin: 0; /* Убираем все внешние отступы */
+  padding: 0; /* Убираем все внутренние отступы */
+  box-sizing: border-box; /* Padding и border включаются в ширину/высоту элемента */
+}
+
+/* Настройки для всей страницы */
+html,
+body {
+  width: 100%; /* Занимает всю доступную ширину */
+  height: 100%; /* Занимает всю доступную высоту */
+  font-family: Arial, sans-serif; /* Базовый шрифт */
+}
+.centred-message {
+  width: 100%; /* Занимает всю ширину экрана */
+  height: 100vh; /* Занимает всю высоту окна браузера (viewport height) */
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Выравниваем по горизонтали по центру */
+  align-items: center; /* Выравниваем по вертикали по центру */
+}
+.centred-message h1 {
+  font-size: 4rem; /* Большой размер шрифта */
+  color: #333; /* Темно-серый цвет текста */
+  text-align: center; /* Выравнивание текста внутри элемента */
+}
+
+
+/* Для больших экранов (компьютеры) */
+@media (min-width: 1024px) {
+    .centered-message h1 {
+        font-size: 4rem; /* Большой текст */
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 1023px) {
+    .centered-message h1 {
+        font-size: 3rem; /* Средний текст */
+    }
+}
+
+/* Для телефонов */
+@media (max-width: 768px) {
+    .centered-message h1 {
+        font-size: 2rem; /* Маленький текст */
+    }
+}
+
