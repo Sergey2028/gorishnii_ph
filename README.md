@@ -1,2 +1,0 @@
-# gorishnii_ph
-photo
